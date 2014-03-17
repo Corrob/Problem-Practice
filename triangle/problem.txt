@@ -1,0 +1,1 @@
+Find the number of lattice triangles in an MxN grid.
