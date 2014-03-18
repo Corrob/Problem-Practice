@@ -13,7 +13,11 @@ struct Point {
 int tri_count(int w, int h);
 
 int main() {
-  std::cout << "Count: " << tri_count(100, 100) << "\n";
+  std::cout << "1x1 (Expected 4): " << tri_count(1, 1) << "\n\n";
+  std::cout << "1x2 (Expected 18): " << tri_count(1, 2) << "\n\n";
+  std::cout << "3x3 (Expected 516): " << tri_count(3, 3) << "\n\n";
+  std::cout << "4x4 (Expected 2148): " << tri_count(4, 4) << "\n\n";
+  std::cout << "10x9 (Expected 210234): " << tri_count(10, 9) << "\n\n";
   return 0;
 }
 
@@ -27,7 +31,6 @@ int tri_count(int w, int h) {
     }
   }
   for (int i = 0; i < points.size(); i++) {
-    std::cout << i << "/" << points.size() << "\n";
     for (int j = i + 1; j < points.size(); j++) {
       for (int k = j + 1; k < points.size(); k++) {
         // Remove horizontal or vertical lines

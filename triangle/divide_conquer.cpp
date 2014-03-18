@@ -20,7 +20,6 @@ int main() {
   std::cout << "3x3 (Expected 516): " << tri_count(3, 3) << "\n\n";
   std::cout << "4x4 (Expected 2148): " << tri_count(4, 4) << "\n\n";
   std::cout << "10x9 (Expected 210234): " << tri_count(10, 9) << "\n\n";
-  std::cout << "100x50 (Expected ?): " << tri_count(100, 50) << "\n\n";
   return 0;
 }
 
@@ -73,7 +72,6 @@ unsigned long long tri_count(int w, int h) {
   }
 
   memo[std::make_pair(w, h)] = count;
-  std::cout << "Width: " << w << "; Height: " << h << "; Count: " << count << "\n";
   return count;
 }
 
