@@ -1,7 +1,6 @@
 #include <iostream>
 #include <sstream>
 #include <map>
-#include <utility>
 #include <cmath>
 
 bool isPrime(unsigned);
