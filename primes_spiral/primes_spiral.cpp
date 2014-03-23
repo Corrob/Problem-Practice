@@ -9,7 +9,7 @@ void generatePrimes(std::map<std::pair<int, int>, unsigned>&);
 std::string getPrimeFromCoordinate(int, int,
     std::map<std::pair<int, int>, unsigned>&);
 
-const unsigned MAXIMUM_PRIME = 11;
+const unsigned MAXIMUM_PRIME = 10000;
 
 int main() {
   std::map<std::pair<int, int>, unsigned> primes;
@@ -17,7 +17,6 @@ int main() {
   // Put 2 (the origin) in the map first.
   std::pair<int, int> origin(0, 0);
   primes.emplace(origin, 2);
-
 
   // Generate primes up to MAXIMUM_PRIME and add to map with coordinates.
   generatePrimes(primes);
